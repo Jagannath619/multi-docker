@@ -27,6 +27,7 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
+  skip_cleanup: true
   region: us-east-1
   app: multi-docker
   env: MultiDocker-env
