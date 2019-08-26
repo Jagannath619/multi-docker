@@ -17,13 +17,13 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
   - docker tag jjxx/multi-client jagannath616/multi-client
-  - docker push jjxx/multi-client
+  - docker push jagannath616/multi-client
   - docker tag jjxx/multi-nginx jagannath616/multi-nginx
-  - docker push jjxx/multi-nginx
+  - docker push jagannath616/multi-nginx
   - docker tag jjxx/multi-server jagannath616/multi-server
-  - docker push jjxx/multi-server
+  - docker push jagannath616/multi-server
   - docker tag jjxx/multi-worker jagannath616/multi-worker
-  - docker push jjxx/multi-worker
+  - docker push jagannath616/multi-worker
 
 deploy:
   provider: elasticbeanstalk
